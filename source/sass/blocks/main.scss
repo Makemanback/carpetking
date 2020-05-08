@@ -1,0 +1,41 @@
+.main {
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+
+.main__header {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 71px;
+  padding-top: 183px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: $light-gr;
+
+  &::after {
+    position: absolute;
+    top: 155px;
+    left: 0;
+    width: 90%;
+    max-width: 1080px;
+
+    content: "Выберите категорию";
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6vw;
+    line-height: 6vw;
+    color: #242424;
+
+    z-index: -1;
+  }
+}

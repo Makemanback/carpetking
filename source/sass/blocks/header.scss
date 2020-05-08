@@ -1,0 +1,153 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1200px;
+  min-height: 80px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+
+  z-index: 5;
+}
+
+.header__logo {
+  max-width: 50px;
+  height: 50px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    max-width: 166px;
+  }
+}
+
+.header__logo-image {
+  min-width: 166px;
+
+  @media (min-width: $tablet-width) {
+
+  }
+}
+
+.header__nav {
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.header__nav--js {
+  display: none;
+}
+
+.header__list {
+  @include list-reset;
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__list-item {
+  @media (min-width: $desktop-width) {
+    margin-right: 40px;
+  }
+}
+
+.header__list-item a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: $grey;
+  fill: $grey;
+
+  &:hover {
+    color: $hv-blue;
+    fill: $hv-blue;
+  }
+}
+
+.header__inner-list {
+  @include list-reset;
+
+  position: absolute;
+  display: none;
+}
+
+.header__button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header__open,
+.header__close {
+  width: 40px;
+  height: 40px;
+
+  fill: #fff;
+  color: #fff;
+
+  &:hover {
+    fill: $hv-blue;
+  }
+}
+
+.header__open--js {
+  display: none;
+}
+
+.header__close--js {
+  display: none;
+}
+
+.header__contacts {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+
+    &::before {
+      position: absolute;
+      top: 7px;
+      left: -40px;
+      width: 25px;
+      height: 25px;
+      content: url("../img/icon-phone.svg");
+
+      z-index: 2;
+    }
+  }
+}
+
+.header__phone {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 21px;
+  color: #FFFFFF;
+
+  margin-bottom: 5px;
+}
+
+.header__phone-title {
+  font-size: 14px;
+  line-height: 13px;
+  color: $grey;
+}

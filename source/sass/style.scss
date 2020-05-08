@@ -1,0 +1,18 @@
+// шрифты
+@import "fonts.scss";
+// нормалайз
+@import "normalize.scss";
+// глобальные стили
+@import "common.scss";
+// миксины
+@import "mixins.scss";
+// переменные
+@import "variables.scss";
+// хедер
+@import "blocks/header.scss";
+// футер
+@import "blocks/footer.scss";
+// главное
+@import "blocks/main.scss";
+// каталог
+@import "blocks/catalog.scss";

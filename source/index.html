@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Carpet</title>
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo" aria-label="логотип ковродела">
+            <img class="header__logo-image" src="img/logo.svg" alt="логотип">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__list-item">
+                  <a href="#">Каталог
+                    <svg class="header__list-arrow" width="14" height="8">
+                      <use xlink:href="img/sprite.svg#icon-arrow-top"></use>
+                    </svg>
+                    <ul class="header__inner-list">
+                      <li class="header__inner-item">Ворсовые коврики</li>
+                      <li class="header__inner-item">EVA коврики</li>
+                      <li class="header__inner-item">Кожаные коврики 5D</li>
+                      <li class="header__inner-item">Быстросъемная тонировка</li>
+                      <li class="header__inner-item">Аксессуары</li>
+                    </ul>
+                  </a>
+                </li>
+                <li class="header__list-item">
+                  <a href="#">Доставка и оплата</a>
+                </li>
+                <li class="header__list-item">
+                  <a href="#">Галерея</a>
+                </li>
+                <li class="header__list-item">
+                  <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__contacts">
+            <a href="tel:+88007777777" class="header__phone">8 800 777 77 77</a>
+            <span class="header__phone-title">Бесплатно по России</span>
+        </div>
+
+        <button class="header__button" type="button" aria-label="Открыть меню">
+          <svg class="header__open" width="40" height="40">
+            <use xlink:href="img/sprite.svg#icon-menu-open"></use>
+          </svg>
+          <svg class="header__close header__close--js" width="40" height="40">
+            <use xlink:href="img/sprite.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+    </header>
+
+    <main class="main">
+      <h1 class="main__header">Каталог товаров</h1>
+      <section class="catalog">
+        <div class="catalog__item">
+          <a href="#" class="catalog__item-link">
+            <img src="img/catalog-vors.png" alt="коврик" class="catalog__img" width="268px" height="268px">
+            <span class="catalog__title">Ворсовые коврики</span>
+            <button class="catalog__button">Выбрать</button>
+          </a>
+        </div>
+
+        <div class="catalog__item">
+          <a href="#" class="catalog__item-link">
+            <img src="img/catalog-eva.png" alt="коврик" class="catalog__img" width="268px" height="268px">
+            <span class="catalog__title">EVA коврики</span>
+            <button class="catalog__button">Выбрать</button>
+          </a>
+        </div>
+
+        <div class="catalog__item">
+          <a href="#" class="catalog__item-link">
+            <img src="img/catalog-5d.png" alt="коврик" class="catalog__img" width="268px" height="268px">
+            <span class="catalog__title">Кожаные коврики 5D</span>
+            <button class="catalog__button">Выбрать</button>
+          </a>
+        </div>
+
+        <div class="catalog__item">
+          <a href="#" class="catalog__item-link">
+            <img src="img/catalog-fast.png" alt="коврик" class="catalog__img" width="268px" height="268px">
+            <span class="catalog__title">Быстросъемная тонировка</span>
+            <button class="catalog__button">Выбрать</button>
+          </a>
+        </div>
+
+        <div class="catalog__item">
+          <a href="#" class="catalog__item-link">
+            <img src="img/catalog-accessories.png" alt="коврик" class="catalog__img" width="268px" height="268px">
+            <span class="catalog__title">Аксессуары</span>
+            <button class="catalog__button">Выбрать</button>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__socials">
+        <ul class="footer__socials-list">
+          <li class="footer__socials-item">
+            <a href="tel:88007777777">
+              <svg class="footer__item-icon" width="16" height="16">
+                <use xlink:href="img/sprite.svg#icon-f-phone"></use>
+              </svg>
+              8 800 777 77 77
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a href="mailto:help@carpetking.ru">
+              <svg class="footer__item-icon" width="16" height="16">
+                <use xlink:href="img/sprite.svg#icon-f-mail"></use>
+              </svg>
+              kovrodel@yandex.ru
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a href="https://vk.com/carpetking_ru">
+              <svg class="footer__item-icon" width="16" height="16">
+                <use xlink:href="img/sprite.svg#icon-f-vk"></use>
+              </svg>
+              vk.com/carpetking_ru
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a href="https://www.instagram.com/carpetking_ru/">
+              <svg class="footer__item-icon" width="16" height="16">
+                <use xlink:href="img/sprite.svg#icon-f-ig"></use>
+              </svg>
+              @carpetking_ru
+            </a>
+          </li>
+          <li class="footer__socials-item footer__socials-item--site">
+            <a href="https://www.drive2.ru/o/CarpetKing">www.drive2.ru/o/CarpetKing</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__wrapper">
+        <nav class="footer__nav">
+          <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#">Каталог</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Доставка и оплата</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Галерея</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Контакты</a>
+              </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__contacts">
+        <span class="footer__contacts-text">
+          ООО Ковродел РФ<br>
+          Ип Исаков В.А.<br>
+          Огрнип 319784700118868<br>
+          ИНН 780431924656<br>
+          Санкт-Петербург Новоселов 49<br>
+        </span>
+      </div>
+      <div class="footer__copyright">
+        <a class="footer__logo" aria-label="логотип ковродела">
+          <img class="footer__logo-image" src="img/logo.svg" alt="логотип">
+        </a>
+        <span class="footer__logo-title">
+          © CarpetKing 2019.<br>
+          Все права защищены
+        </span>
+        <a class="footer__confidential" href="https://xn--b1aedriobp.xn--p1ai/docs/policy.pdf">Политика конфиденциальности</a>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
