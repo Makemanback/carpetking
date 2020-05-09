@@ -2,11 +2,16 @@
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
+  // overflow: hidden;
 
   @media (min-width: $desktop-width) {
     width: 100%;
     max-width: 1200px;
   }
+}
+
+.main__hidden {
+  @include visually-hidden;
 }
 
 .main__header {
@@ -38,4 +43,36 @@
 
     z-index: -1;
   }
+
+  &--accessoires::after {
+    content: "Выберите товар";
+  }
+}
+
+.main__header-catalog {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: $light-gr;
+}
+
+.main__header-form {
+  margin: 0 auto;
+  margin-bottom: 80px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 44px;
+  text-align: center;
+  color: $light-gr;
+}
+
+.main__header-set {
+  margin: 0 auto;
+  margin-bottom: 80px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 44px;
+  text-align: center;
+  color: $light-gr;
 }

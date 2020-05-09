@@ -1,0 +1,386 @@
+.form {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @media (min-width: 1160px) {
+    justify-content: space-between;
+  }
+}
+
+// выбор цвета ковра и канта
+.form__color {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__color-img {
+  margin-bottom: 30px;
+}
+
+.form__label-wrapper {
+  margin-bottom: 110px;
+}
+
+.form__color-title {
+  margin-bottom: 20px;
+
+  font-size: 22px;
+  line-height: 21px;
+  color: #8e8e8e;
+}
+
+.form__color-label {
+  position: relative;
+}
+
+.form__radio-box {
+  @include visually-hidden;
+
+  appearance: none;
+
+  &:hover + .form__radio-check {
+    outline: auto 5px -webkit-focus-ring-color;
+  }
+
+  &:active + .form__radio-check {
+    border: 4px solid #ffffff;
+    border-radius: 5px;
+  }
+
+  &:focus + .form__radio-check {
+    border: 4px solid #ffffff;
+    border-radius: 5px;
+  }
+
+  &:checked + .form__radio-check {
+    border: 4px solid #ffffff;
+    border-radius: 5px;
+  }
+}
+
+.form__radio-check {
+  position: absolute;
+  top: 40px;
+  left: -125px;
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/radio-2.png");
+}
+
+.form__color-label:nth-of-type(2) .form__radio-check {
+  top: 40px;
+  left: -65px;
+}
+
+.form__label-wrapper:nth-of-type(2) .form__radio-check {
+  top: 40px;
+  left: -125px;
+  background: #242424;
+}
+
+.form__label-wrapper:nth-of-type(2) .form__color-label:nth-last-of-type(2) .form__radio-check {
+  left: -65px;
+  background: #808080;
+}
+
+.form__label-wrapper:nth-of-type(2) .form__color-label:nth-last-of-type(3) .form__radio-check {
+  left: -5px;
+  background: #aa917d;
+}
+
+.form__label-wrapper:nth-of-type(2) .form__color-label:nth-last-of-type(4) .form__radio-check {
+  left: 55px;
+  background: #0163c9;
+}
+
+.form__label-wrapper:nth-of-type(2) .form__color-label:nth-last-of-type(5) .form__radio-check {
+  left: 115px;
+  background: #e00000;
+}
+
+.form__label-wrapper:nth-of-type(2) .form__color-label:nth-last-of-type(6) .form__radio-check {
+  left: 175px;
+  background: #441a1a;
+}
+
+// обертка второй колонки
+.form__wrapper-second {
+  display: flex;
+  flex-direction: column;
+}
+
+// комплект в салон
+.form__construct {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 55px;
+
+  &::after {
+    position: absolute;
+    top: 60px;
+    width: 70px;
+    height: 70px;
+    content: "";
+    background-image: url("../img/construct.png");
+  }
+}
+
+.form__construct-title {
+  margin-bottom: 40px;
+
+  font-size: 22px;
+  line-height: 21px;
+  color: #8e8e8e;
+}
+
+.form__construct-label {
+  margin-left: 155px;
+  margin-bottom: 25px;
+
+  font-size: 18px;
+  line-height: 17px;
+  color: $light-gr;
+}
+
+.form__construct-radio-box {
+  @include visually-hidden;
+  appearance: none;
+
+  &:hover + .form__construct-radio-check {
+    outline: auto 5px -webkit-focus-ring-color;
+  }
+
+  &:active + .form__construct-radio-check {
+    border: 4px solid #ffffff;
+    background: linear-gradient(180deg, #e00000 0%, #0063c8 100%);
+    transform: rotate(90deg);
+  }
+
+  &:focus + .form__construct-radio-check {
+    outline: auto 5px -webkit-focus-ring-color;
+  }
+
+  &:checked + .form__construct-radio-check {
+    border: 4px solid #ffffff;
+    background: linear-gradient(180deg, #e00000 0%, #0063c8 100%);
+    transform: rotate(90deg);
+  }
+}
+
+.form__construct-radio-check {
+  position: absolute;
+  left: 100px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+// форма аксессуары
+.form__accessoires {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 40px;
+}
+
+.form__accessoires-title {
+  margin-bottom: 40px;
+
+  font-size: 22px;
+  line-height: 21px;
+  color: #8e8e8e;
+}
+
+.form__accessoires-label {
+  position: relative;
+  margin-bottom: 18px;
+  margin-left: 140px;
+
+  font-size: 18px;
+  line-height: 17px;
+  color: $light-gr;
+
+  &:nth-of-type(2)::before {
+    @include position;
+    background-image: url("../img/saddle.png");
+  }
+}
+
+.form__construct-check-box {
+  @include visually-hidden;
+  appearance: none;
+
+  &:hover + .form__accessoires-check {
+    outline: auto 5px -webkit-focus-ring-color;
+  }
+
+  &:active + .form__accessoires-check {
+    background-image: url("../img/yes.png");
+    background-repeat: no-repeat;
+  }
+
+  &:focus + .form__accessoires-check {
+    outline: auto 5px -webkit-focus-ring-color;
+  }
+
+  &:checked + .form__accessoires-check {
+    background-image: url("../img/yes.png");
+    background-repeat: no-repeat;
+    background-position: 3px 6px;
+  }
+}
+
+.form__accessoires-check {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 24px;
+  height: 24px;
+
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+// люверсы
+.form__cringle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.form__cringle-label {
+  position: relative;
+  margin-bottom: 25px;
+  margin-left: 140px;
+
+  font-size: 16px;
+  line-height: 15px;
+  color: $light-gr;
+
+  &:nth-of-type(2)::before {
+    @include position;
+    background-image: url("../img/cringle.png");
+  }
+}
+
+.form__construct-radio-check--cringle {
+  top: -5px;
+  left: -40px;
+}
+
+// багажник
+.form__luggage {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.form__luggage-label {
+  position: relative;
+  margin-bottom: 25px;
+  margin-left: 140px;
+
+  font-size: 16px;
+  line-height: 15px;
+  color: $light-gr;
+
+  &:nth-of-type(2)::before {
+    @include position;
+    background-image: url("../img/luggage.png");
+  }
+}
+
+.form__construct-radio-check--luggage {
+  top: -5px;
+  left: -40px;
+}
+
+// лейблы(патчи)
+.form__patch {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.form__patch-label {
+  position: relative;
+  margin-bottom: 25px;
+  margin-left: 140px;
+
+  font-size: 16px;
+  line-height: 15px;
+  color: $light-gr;
+
+  &:nth-of-type(2)::before {
+    @include position;
+    background-image: url("../img/patch.png");
+  }
+}
+
+.form__construct-radio-check--patch {
+  top: -5px;
+  left: -40px;
+}
+
+// блок цены и отправки
+.form__wrapper-third {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__cost-text {
+  margin-bottom: 27px;
+  font-size: 22px;
+  line-height: 21px;
+  color: #8E8E8E;
+}
+
+.form__cost-value {
+  margin-bottom: 38px;
+  font-size: 32px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+.form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 53px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 17px;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 5px;
+
+  &--submit {
+    margin-bottom: 28px;
+    background: linear-gradient(90deg, #0c5dbc 0%, #0c5dbc 10%, #d60408 50%, #d60408 60%, #0c5dbc 90%, #0c5dbc 100%);
+    background-size: 200% auto;
+    transition: .3s ease;
+
+    &:hover {
+      background-position: right center;
+    }
+  }
+
+  &--basket {
+    border: 2px solid #ffffff;
+  }
+}
+
+// форма тонировки
+
+.form__construct-radio-check--tint {
+  left: 0;
+  top: -5px;
+}

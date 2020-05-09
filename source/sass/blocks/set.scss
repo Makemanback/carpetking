@@ -1,0 +1,212 @@
+.set {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+
+  @media (min-width: 1100px) {
+    justify-content: space-between;
+  }
+}
+
+.set__form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 1100px) {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+
+.set__form-tint {
+  margin-bottom: 45px;
+
+}
+
+.set__form-header {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 22px;
+  line-height: 21px;
+  color: #8e8e8e;
+  text-align: left;
+}
+
+.set__table-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
+}
+
+.set__table-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+  @media (min-width: 1100px) {
+    flex-direction: row;
+  }
+}
+
+.set__tint-table:first-child {
+  margin-right: 28px;
+}
+
+.set__tint-label {
+  position: relative;
+  display: flex;
+  flex-grow: 2;
+  margin-bottom: 40px;
+  margin-left: 40px;
+
+  font-size: 18px;
+  line-height: 17px;
+  color: $light-gr;
+
+  &:last-child {
+    margin-left: 130px;
+  }
+}
+
+.set__tint-radio-box {
+  @include visually-hidden;
+  appearance: none;
+
+  &:hover + .set__tint-radio-check {
+    outline: auto 5px -webkit-focus-ring-color;
+  }
+
+  &:active + .set__tint-radio-check {
+    border: 4px solid #ffffff;
+    background: linear-gradient(180deg, #e00000 0%, #0063c8 100%);
+    transform: rotate(90deg);
+  }
+
+  &:focus + .set__tint-radio-check {
+    outline: auto 5px -webkit-focus-ring-color;
+  }
+
+  &:checked + .set__tint-radio-check {
+    border: 4px solid #ffffff;
+    background: linear-gradient(180deg, #e00000 0%, #0063c8 100%);
+    transform: rotate(90deg);
+  }
+}
+
+.set__tint-radio-check {
+  position: absolute;
+  left: -40px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+// таблица
+.set__table-row {
+  display: flex;
+
+  margin-bottom: 20px;
+}
+
+.set__table-row > .set__table-cell {
+  font-weight: 400;
+}
+
+.set__table-inner {
+  display: flex;
+  min-width: 200px;
+  max-width: 200px;
+}
+
+.set__table-inner .set__table-cell:nth-child(2) {
+  display: inline-block;
+  flex-grow: 2;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-bottom: 1px solid #252525;
+}
+
+.set__table-cell {
+  display: inline-block;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  text-align: left;
+}
+
+// светопропускаемость
+.set__light-header {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 22px;
+  line-height: 22px;
+  color: #8e8e8e;
+}
+
+.set__light-wrapper {
+  display: flex;
+}
+
+.set__light-radio {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 111px;
+  height: 48px;
+  margin-right: 20px;
+  font-size: 22px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.set_light-radio-box {
+  @include visually-hidden;
+  appearance: none;
+
+  &:hover + .set__light-radio-check {
+    outline: auto 5px -webkit-focus-ring-color;
+  }
+
+  &:focus + .set__light-radio-check {
+    outline: auto 5px -webkit-focus-ring-color;
+  }
+
+  &:active + .set__light-radio-check {
+    border: 4px solid #ffffff;
+    border-radius: 5px;
+  }
+
+  &:checked + .set__light-radio-check {
+    border: 4px solid #ffffff;
+    border-radius: 5px;
+  }
+}
+
+.set__light-radio-check {
+  position: absolute;
+  width: 111px;
+  height: 48px;
+  background-image: url("../img/light-radio.png");
+  z-index: -1;
+}
+
+// заказ
+.set__form-order {
+  display: flex;
+  flex-direction: column;
+}
+
+.set__form-img {
+  margin-bottom: 80px;
+}

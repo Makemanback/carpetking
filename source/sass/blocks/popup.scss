@@ -1,0 +1,95 @@
+.popup {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  z-index: 10;
+
+  background-color: rgba(13, 13, 13, 0.9);
+  color: #ffffff;
+}
+
+.popup__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 410px;
+  height: 310px;
+  margin: 0 auto;
+  margin-top: 300px;
+}
+
+.popup__header {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #fbfbfb;
+}
+
+.popup__text {
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #fbfbfb;
+}
+
+.popup__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__form-phone {
+  width: 409px;
+  height: 42px;
+  margin-bottom: 30px;
+  padding-left: 40px;
+
+  color: #ffffff;
+  background-color: #242424;
+  border-radius: 5px;
+  background-image: url("../img/popup-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 15px 12px;
+
+  &::placeholder {
+    font-family: "Open sans", "Arial", sans-serif;
+    color: #ffffff;
+  }
+}
+
+.popup__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 409px;
+  height: 54px;
+  margin-bottom: 17px;
+
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 5px;
+
+  background: linear-gradient(90deg, #0c5dbc 0%, #0c5dbc 10%, #d60408 50%, #d60408 60%, #0c5dbc 90%, #0c5dbc 100%);
+  background-size: 200% auto;
+  transition: .3s ease;
+
+  &:hover {
+    background-position: right center;
+  }
+}
+
+.popup__agreement {
+  font-size: 12px;
+  line-height: 14px;
+  color: #808080;
+}
