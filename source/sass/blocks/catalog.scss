@@ -58,14 +58,14 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  color: #fff;
+  color: #ffffff;
 
   border: none;
   border-radius: 5px;
 
   background: linear-gradient(90deg, #0c5dbc 0%, #0c5dbc 10%, #d60408 50%, #d60408 60%, #0c5dbc 90%, #0c5dbc 100%);
   background-size: 200% auto;
-  transition: .3s ease;
+  transition: 0.3s ease;
 
   cursor: pointer;
 
@@ -73,4 +73,3 @@
     background-position: right center;
   }
 }
-
